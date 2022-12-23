@@ -1,0 +1,67 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && next export",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "cypress": "cypress open",
+    "clean": "rm -rf ./node_modules && rm -rf ./storybook-static && rm -rf ./out"
+  },
+  "dependencies": {
+    "@ajna/pagination": "^1.4.19",
+    "@babel/preset-react": "^7.18.6",
+    "@chakra-ui/icons": "^2.0.13",
+    "@chakra-ui/react": "^2.2.4",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@reduxjs/toolkit": "^1.8.3",
+    "@toast-ui/editor-plugin-color-syntax": "^3.1.0",
+    "@toast-ui/react-editor": "^3.2.2",
+    "axios": "^0.27.2",
+    "dayjs": "^1.11.6",
+    "framer-motion": "^6",
+    "lodash": "^4.17.21",
+    "next": "^12.2.4",
+    "next-redux-wrapper": "^8.0.0",
+    "next-transpile-modules": "^10.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.34.0",
+    "react-icons": "^4.4.0",
+    "react-redux": "^8.0.2",
+    "redux-persist": "^6.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/builder-webpack5": "^6.5.15",
+    "@storybook/manager-webpack5": "^6.5.15",
+    "@storybook/react": "^6.5.15",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/lodash": "^4.14.184",
+    "@types/node": "18.6.1",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "18.0.6",
+    "babel-loader": "^8.3.0",
+    "cypress": "^12.2.0",
+    "eslint": "8.20.0",
+    "eslint-config-next": "12.2.3",
+    "storybook-addon-next": "^1.7.1",
+    "storybook-addon-next-router": "^4.0.2",
+    "typescript": "4.7.4"
+  },
+  "overrides": {
+    "storybook-addon-next-router": {
+      "next": "$next"
+    }
+  }
+}
